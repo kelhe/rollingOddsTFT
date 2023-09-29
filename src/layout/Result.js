@@ -6,7 +6,7 @@ function Result({ probArr }) {
     let rows = percentages.map((percent, idx) => {
         return (
           <tr>
-            <td>{idx} {idx === 1 ? "unit" : "units"}</td>
+            <td>{idx + 1} {idx === 1 ? "unit" : "units"}</td>
             <td>{Math.round(percent * 100)}%</td>
           </tr>
         );
